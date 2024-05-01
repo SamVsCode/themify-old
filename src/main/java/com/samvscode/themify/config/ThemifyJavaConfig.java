@@ -1,7 +1,7 @@
 package com.samvscode.themify.config;
 
-import com.samvscode.themify.api.MyPluginComponent;
-import com.samvscode.themify.impl.MyPluginComponentImpl;
+import com.samvscode.themify.api.ThemifyComponent;
+import com.samvscode.themify.impl.ThemifyComponentImpl;
 import com.atlassian.plugins.osgi.javaconfig.configs.beans.ModuleFactoryBean;
 import com.atlassian.plugins.osgi.javaconfig.configs.beans.PluginAccessorBean;
 import com.atlassian.sal.api.ApplicationProperties;
@@ -19,7 +19,7 @@ import static com.atlassian.plugins.osgi.javaconfig.OsgiServices.importOsgiServi
         ModuleFactoryBean.class,
         PluginAccessorBean.class
 })
-public class MyPluginJavaConfig {
+public class ThemifyJavaConfig {
 
 
     // imports ApplicationProperties from OSGi
@@ -29,14 +29,14 @@ public class MyPluginJavaConfig {
     }
 
     @Bean
-    public MyPluginComponent myPluginComponent(ApplicationProperties applicationProperties) {
-        return new MyPluginComponentImpl(applicationProperties);
+    public ThemifyComponent themifyComponent(ApplicationProperties applicationProperties) {
+        return new ThemifyComponentImpl(applicationProperties);
     }
 
-    // Exports MyPluginComponent as an OSGi service
+    // Exports ThemifyComponent as an OSGi service
     @Bean
     public FactoryBean<ServiceRegistration> registerMyDelegatingService(
-            final MyPluginComponent mypluginComponent) {
-        return exportOsgiService(mypluginComponent, null, MyPluginComponent.class);
+            final ThemifyComponent themifyComponent) {
+        return exportOsgiService(themifyComponent, null, ThemifyComponent.class);
     }
 }

@@ -10,12 +10,12 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <organization>
-        <name>Example Company</name>
-        <url>http://www.example.com/</url>
+        <name>SamVsCode</name>
+        <url>http://www.samvscode.com/</url>
     </organization>
 
     <name>themify</name>
-    <description>This is the com.samvscode.themify:themify plugin for Atlassian JIRA.</description>
+    <description>Set Modern themes for Jira</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>

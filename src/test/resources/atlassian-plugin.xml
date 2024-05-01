@@ -6,7 +6,7 @@
     </plugin-info>
 
     <!-- from our base plugin -->
-    <component-import key="myComponent" interface="com.samvscode.themify.api.MyPluginComponent"/>
+    <component-import key="themifyComponent" interface="com.samvscode.themify.api.ThemifyComponent"/>
 
     <!-- from the product container -->
     <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
