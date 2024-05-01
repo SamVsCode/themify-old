@@ -5,6 +5,7 @@ import com.samvscode.themify.impl.ThemifyComponentImpl;
 import com.atlassian.plugins.osgi.javaconfig.configs.beans.ModuleFactoryBean;
 import com.atlassian.plugins.osgi.javaconfig.configs.beans.PluginAccessorBean;
 import com.atlassian.sal.api.ApplicationProperties;
+
 import org.osgi.framework.ServiceRegistration;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.annotation.Bean;

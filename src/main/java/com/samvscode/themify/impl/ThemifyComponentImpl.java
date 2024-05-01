@@ -11,6 +11,7 @@ public class ThemifyComponentImpl implements ThemifyComponent
     
     public ThemifyComponentImpl(final ApplicationProperties applicationProperties) {
         this.applicationProperties = applicationProperties;
+        
     }
 
     public String getName() {
