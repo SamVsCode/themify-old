@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decorator" content="atl.admin" />
     <title>Themify Settings</title>
+    $webResourceManager.requireResourcesForContext("com.samvscode.themify.settings");
+    <script>
+        AJS.toInit(function () {
+            console.log("ajs");
+            window['@themify']['themify-settings'].renderSettings();
+        });
+    </script>
 </head>
+
 <body>
-    <div>Themify settings page</div>
+    <div id="themify-root"></div>
+
 </body>
+
 </html>
